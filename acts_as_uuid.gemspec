@@ -6,10 +6,10 @@ Gem::Specification.new do |s|
   s.name        = "acts_as_uuid"
   s.version     = ActsAsUuid::VERSION
   s.authors     = ["Cristiano Betta"]
-  s.email       = ["cbetta@gmail.com"]
+  s.email       = ["cristiano@emberads.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{TODO: Allows ActiveRecord to use (native) UUIDs }
+  s.description = %q{TODO: Allows ActiveRecord to use (native) UUIDs, even as primary keys. Currently only works with PostgreSQL. }
 
   s.rubyforge_project = "acts_as_uuid"
 
