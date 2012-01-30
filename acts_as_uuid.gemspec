@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = ActsAsUuid::VERSION
   s.authors     = ["Cristiano Betta"]
   s.email       = ["cristiano@emberads.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/EmberAds/acts_as_uuid"
   s.summary     = %q{TODO: Allows ActiveRecord to use (native) UUIDs }
   s.description = %q{TODO: Allows ActiveRecord to use (native) UUIDs, even as primary keys. Currently only works with PostgreSQL. }
 
