@@ -1,6 +1,6 @@
 # ActsAsUUID
 
-Adds (native) UUID primary key support to your ActiveRecord models. Currently only supports PostgreSQL. ActsAsUUID works with primary keys and ActiveRecordAssociations.
+Adds (native) UUID support, including support for primary keys and associations , to your ActiveRecord models. Currently only supports PostgreSQL.
 
 Inspired by https://github.com/jashmenn/activeuuid and the lack of PostgreSQL gems that worked.
 
@@ -10,9 +10,11 @@ Add this to your `Gemfile`:
 
 `gem "acts_as_uuid"`
 
-## Example
+You can now set the type `uuid` for any attribute in your models.
 
-### 1a: New models
+## Example: Adding a UUID primary key to your models
+
+### Step 1a: For new models
 
 ```ruby
 class AddUUIDPrimaryKeyToEmail < ActiveRecord::Migration
@@ -25,7 +27,7 @@ class AddUUIDPrimaryKeyToEmail < ActiveRecord::Migration
 end
 ```
 
-### 1b: Migrate existing models
+### Step 1b: Migrating existing models
 
 For existing models just add:
 
@@ -40,7 +42,7 @@ end
 ```
 Keep in mind that after this all your UUIDs will be set to nil.
 
-### 2: Extend your model
+### Step 2: Extend your model
 
 ```ruby
 class Email < ActiveRecord::Base
