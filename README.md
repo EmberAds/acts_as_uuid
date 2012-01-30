@@ -49,3 +49,7 @@ class Email < ActiveRecord::Base
   include ActsAsUUID
 end
 ```
+
+### License
+
+See LICENSE
