@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Cristiano Betta"]
   s.email       = ["cristiano@emberads.com"]
   s.homepage    = "https://github.com/EmberAds/acts_as_uuid"
-  s.summary     = %q{TODO: Allows ActiveRecord to use (native) UUIDs }
-  s.description = %q{TODO: Allows ActiveRecord to use (native) UUIDs, even as primary keys. Currently only works with PostgreSQL. }
+  s.summary     = %q{Allows ActiveRecord to use (native) UUIDs }
+  s.description = %q{Allows ActiveRecord to use (native) UUIDs, even as primary keys. Currently only works with PostgreSQL. }
 
   s.rubyforge_project = "acts_as_uuid"
 
