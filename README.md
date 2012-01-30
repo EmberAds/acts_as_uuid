@@ -23,6 +23,7 @@ class AddUUIDPrimaryKeyToEmail < ActiveRecord::Migration
     add_index :emails, :id
   end
 end
+```
 
 ### 1b: Migrate existing models
 
