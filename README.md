@@ -27,6 +27,8 @@ class AddUUIDPrimaryKeyToEmail < ActiveRecord::Migration
 end
 ```
 
+*Don't forget:* You will also need to change any foreign keys to the `uuid` type.
+
 ### Step 1b: Migrating existing models
 
 For existing models just add:
