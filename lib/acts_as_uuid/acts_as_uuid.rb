@@ -1,8 +1,6 @@
 module ActsAsUUID
   def self.included klass
     klass.before_validation :generate_uuid
-    klass.validates :id, :uniqueness => true
-    klass.primary_key = :id
     klass.extend ClassMethods
   end
 
@@ -11,6 +9,8 @@ module ActsAsUUID
   end
 
   module ClassMethods
+    protected
+
     attr_accessor :acts_as_uuid_field
 
     def uuid_on uuid_field, options = {}
