@@ -10,10 +10,10 @@ module ActsAsUUID
 
   module ClassMethods
 
-    def uuid_on uuid_field, options = {}
-      self.acts_as_uuid_field = uuid_field
-      self.validates uuid_field, :uniqueness => true
-      self.primary_key = uuid_field if options[:as] == :primary_key
+    def uuid_on field, options = {}
+      self.acts_as_uuid_field = field
+      self.validates field, :uniqueness => true
+      self.primary_key = field if options[:as] == :primary_key
     end
 
     attr_accessor :acts_as_uuid_field
