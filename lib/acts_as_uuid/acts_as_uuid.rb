@@ -1,3 +1,7 @@
+unless defined?(UUID) && UUID.respond_to?(:generate)
+  raise "UUID.generate needs to be provided for acts_as_uuid to work. Try requiring the UUID or CUUID gem."
+end
+
 module ActsAsUUID
   def self.included klass
     klass.before_validation :generate_uuid
