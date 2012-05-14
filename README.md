@@ -8,9 +8,12 @@ Inspired by https://github.com/jashmenn/activeuuid and the lack of PostgreSQL ge
 
 Add this to your `Gemfile`:
 
-`gem "acts_as_uuid"`
+    gem "uuid"
+    gem "acts_as_uuid"
 
 You can now set the type `uuid` for an attribute in your models.
+
+NB: We don't depend on uuid gem because you can use any gem that provides `UUID.generate`, such as the [cuuid](http://github.com/EmberAds/cuuid) gem.
 
 ## Example: Adding a UUID primary key to your models
 
