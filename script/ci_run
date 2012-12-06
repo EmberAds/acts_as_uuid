@@ -1,21 +1,12 @@
 #!/usr/bin/env bash
 
-# Expects $WORKSPACE to be definined
-
 # Fail if any step fucks up
 set -e
 
 # Setup some stuff
-if [[ -f /var/lib/jenkins/config/vars ]]; then
-  source /var/lib/jenkins/config/vars
+if [[ -f /var/lib/jenkins/config/setup ]]; then
+  source /var/lib/jenkins/config/setup
 fi
-
-# Setup our files if we need to
-if [[ -d "$WORKSPACE/../config" ]]; then
-  cp -fv $WORKSPACE/../config/*.yml $WORKSPACE/config/
-fi
-
-cd $WORKSPACE
 
 bundle install --path=vendor/bundle
 bundle exec rspec spec
